@@ -1,8 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png"; // Replace with your actual project screenshots
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+
+import preventativeImg from "../assets/img/preventative.png";
+import vmsImg from "../assets/img/vms.png";
+import pmsImg from "../assets/img/pms.png";
+import websiteImg from "../assets/img/website.png";
+import patrolImg from "../assets/img/patrol.png";
+import tmsImg from "../assets/img/tms.jpeg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -12,33 +16,33 @@ export const Projects = () => {
   const projects = [
     {
       title: "Training Management System",
-      description: "Laravel, REST APIs, & MySQL Optimization",
-      imgUrl: projImg1,
+      description: "Laravel, REST APIs, MySQL, AWS Deployment",
+      imgUrl: tmsImg,
     },
     {
       title: "Property Management System",
-      description: "Accounting Module & Multi-branch APIs",
-      imgUrl: projImg2,
+      description: "Laravel, Livewire, RESTful APIs, Postman, MySQL",
+      imgUrl: pmsImg,
     },
     {
       title: "Visitor Management System",
-      description: "OCR Integration & Security Modules",
-      imgUrl: projImg3,
+      description: "Laravel, Livewire, RESTful APIs, Postman, MySQL, OCR Integration",
+      imgUrl: vmsImg,
     },
     {
-      title: "Accounting Module",
-      description: "High-performance RESTful API Development",
-      imgUrl: projImg1,
+      title: "Visitor Management System",
+      description: "Laravel, Livewire, RESTful APIs, Postman, MySQL",
+      imgUrl: patrolImg,
     },
     {
-      title: "Freelance Web System",
-      description: "Laravel & Livewire Data Management",
-      imgUrl: projImg2,
+      title: "Preventative Maintenance System",
+      description: "Laravel, Livewire, Postman, MySQL",
+      imgUrl: preventativeImg,
     },
     {
-      title: "Enterprise Backend Refinements",
-      description: "System Stability & Performance Tuning",
-      imgUrl: projImg3,
+      title: "Responsive Website Development",
+      description: "HTML, CSS, JavaScript, Bootstrap",
+      imgUrl: websiteImg,
     },
   ];
 
