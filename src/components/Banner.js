@@ -57,9 +57,9 @@ export const Banner = () => {
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Welcome to my Portfolio</span>
                                     <h1>{`Hi! I'm Taufiq`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                                    <p className="justify-text">Highly motivated and detail-oriented Software Engineer seeking a Software Engineer position to
-                                        contribute to a dynamic team. Eager to apply my leadership, communication, and technical skills to
-                                        innovative projects, and further develop my expertise in software engineering.</p>
+                                    <p className="justify-text">Software Developer (2+ years) with hands-on production experience in PHP (Laravel) and APIbased
+                                    systems. Delivered performance improvements of up to 50%, implemented 99.9%-accuFrate
+                                    integrations, and supported scalable enterprise applications in remoFte, cross-border teams.</p>
                                     <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                                 </div>}
                         </TrackVisibility>
