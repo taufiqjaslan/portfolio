@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
+import projImg1 from "../assets/img/project-img1.png"; // Replace with your actual project screenshots
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -11,33 +11,33 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Training Management System",
+      description: "Laravel, REST APIs, & MySQL Optimization",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Property Management System",
+      description: "Accounting Module & Multi-branch APIs",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Visitor Management System",
+      description: "OCR Integration & Security Modules",
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Accounting Module",
+      description: "High-performance RESTful API Development",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Freelance Web System",
+      description: "Laravel & Livewire Data Management",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Enterprise Backend Refinements",
+      description: "System Stability & Performance Tuning",
       imgUrl: projImg3,
     },
   ];
@@ -50,18 +50,18 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h2>Portfolio & Experience</h2>
+                <p>Software Developer with over 2 years of experience delivering high-performance Laravel applications, RESTful APIs, and scalable cloud solutions.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Major Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Work Experience</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Education</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -79,11 +79,75 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                      <div className="experience-roadmap">
+                        {/* Current Role */}
+                        <div className="roadmap-item">
+                          <div className="roadmap-dot active"></div>
+                          <div className="roadmap-content">
+                            <span className="roadmap-date">Sept 2024 - Present</span>
+                            <h3>Software Developer (Full Time)</h3>
+                            <h4>DSMR Group Pte Ltd - Remote </h4>
+                            <ul>
+                              <li>Engineered backend refinements achieving a 50% improvement in system response time.</li>
+                              <li>Architected RESTful API integrations with third-party finance systems, maintaining 99.9% accuracy.</li>
+                              <li>Automated data flows that reduced manual reconciliation labor by 40%.</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        {/* Previous Role */}
+                        <div className="roadmap-item">
+                          <div className="roadmap-dot"></div>
+                          <div className="roadmap-content">
+                            <span className="roadmap-date">Feb 2024 - Aug 2024</span>
+                            <h3>Junior Software Developer (Full Time)</h3>
+                            <h4>Huacomm Telecommunications Engineering</h4>
+                            <ul>
+                              <li>Directed the development of an accounting module, delivering 90% of the system a month early.</li>
+                              <li>Implemented high-performance RESTful APIs, increasing data retrieval speed by 30%.</li>
+                              <li>Translated business requirements into technical specs with a 90% client satisfaction rate.</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        {/* Freelance */}
+                        <div className="roadmap-item">
+                          <div className="roadmap-dot"></div>
+                          <div className="roadmap-content">
+                            <span className="roadmap-date">Mar 2024 - Sept 2024</span>
+                            <h3>Software Developer (Freelance)</h3>
+                            <h4>Self-Employed - Remote</h4>
+                            <ul>
+                              <li>Developed a responsive Laravel/Livewire system, improving data organization by 80%.</li>
+                              <li>Enhanced UX and reduced manual tasks by 60% via role-based access control.</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        {/* Internship */}
+                        <div className="roadmap-item">
+                          <div className="roadmap-dot"></div>
+                          <div className="roadmap-content">
+                            <span className="roadmap-date">Aug 2023 - Jan 2024</span>
+                            <h3>Software Developer (Internship)</h3>
+                            <h4>Huacomm Telecommunications Engineering</h4>
+                            <ul>
+                              <li>Maintained Laravel/Livewire apps, improving interface and functionality by 80%.</li>
+                              <li>Collaborated with cross-functional teams for accounting software solutions.</li>
+                              <li>Debugged production issues, providing 100% permanent solutions.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <div className="education-info text-center">
+                        <h3>Bachelor of Computer Science (Software Engineering) Hons</h3>
+                        <p>Universiti Malaysia Pahang Al-Sultan Abdullah | CGPA: 3.83/4.00</p>
+                        <h3>Diploma of Computer Science</h3>
+                        <p>Universiti Malaysia Pahang Al-Sultan Abdullah | CGPA: 3.63/4.00</p>
+                      </div>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
@@ -92,7 +156,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="Background"></img>
     </section>
   )
 }
