@@ -58,7 +58,7 @@ export const Banner = () => {
                                     <span className="tagline">Welcome to my Portfolio</span>
                                     <h1>{`Hi! I'm Taufiq`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                                     <p className="justify-text">Software Developer (2+ years) with hands-on production experience in PHP (Laravel) and API based
-                                    systems. Delivered performance improvements of up to 50%, implemented 99.9%-accuFrate
+                                    systems. Delivered performance improvements of up to 50%, implemented 99.9%-accurate
                                     integrations, and supported scalable enterprise applications in remoFte, cross-border teams.</p>
                                     <button onClick={() => window.location.href = 'mailto:muhd.taufiq.jaslan@gmail.com'}>Let’s Connect <ArrowRightCircle size={25} /></button>
                                 </div>}
