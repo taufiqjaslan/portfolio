@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/programmer.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -60,16 +60,17 @@ export const Banner = () => {
                                     <p className="justify-text">Software Developer (2+ years) with hands-on production experience in PHP (Laravel) and API based
                                     systems. Delivered performance improvements of up to 50%, implemented 99.9%-accuFrate
                                     integrations, and supported scalable enterprise applications in remoFte, cross-border teams.</p>
-                                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                                    <button onClick={() => window.location.href = 'mailto:muhd.taufiq.jaslan@gmail.com'}>Let’s Connect <ArrowRightCircle size={25} /></button>
                                 </div>}
                         </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <TrackVisibility>
                             {({ isVisible }) =>
-                                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                                    <img src={headerImg} alt="Header Img" />
-                                </div>}
+                            /* 'animate__slideInRight' or 'animate__backInRight' feels like a sliding UI panel */
+                            <div className={isVisible ? "animate__animated animate__slideInRight" : ""}>
+                                <img src={headerImg} alt="Header Img" />
+                            </div>}
                         </TrackVisibility>
                     </Col>
                 </Row>

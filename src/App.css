@@ -111,7 +111,8 @@ nav.navbar.scrolled {
 }
 
 nav.navbar a.navbar-brand {
-  width: 9%;
+  width: auto; /* Change from 9% to auto */
+  margin-right: 50px; /* Adds a nice gap between the logo and Home link */
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -753,4 +754,111 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #b8b8b8;
   display: block;
   margin-bottom: 5px;
+}
+
+.contact-info-wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.contact-info-item .icon-box {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 22px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-info-item p {
+  margin: 0;
+  font-weight: 700;
+  color: #B8B8B8;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.contact-info-item a, .contact-info-item span {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.contact-info-item a:hover {
+  color: #AA367C;
+}
+
+.contact button.vvd {
+  background-color: #fff;
+  color: #121212;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s;
+}
+
+.contact button.vvd:hover {
+  background-color: #121212;
+  color: #fff;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.logo-text .bracket {
+    color: #AA367C; /* Match your theme pink/purple */
+    font-size: 28px;
+}
+
+/* Responsive Fix for Project Tabs */
+@media (max-width: 767px) {
+  .project .nav.nav-pills {
+    width: 100%; /* Take full width on mobile */
+    border-radius: 20px; /* Softer corners for stacked mobile view */
+  }
+
+  .project .nav.nav-pills .nav-item {
+    width: 100%; /* Each tab takes a full row */
+  }
+
+  /* Reset border radii for vertical stacking */
+  .nav-link#projects-tabs-tab-first,
+  .nav-link#projects-tabs-tab-third {
+    border-radius: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  }
+  
+  /* Add top/bottom radius to only the top and bottom items when stacked */
+  .project .nav.nav-pills .nav-item:first-child .nav-link {
+    border-radius: 20px 20px 0 0 !important;
+  }
+  .project .nav.nav-pills .nav-item:last-child .nav-link {
+    border-radius: 0 0 20px 20px !important;
+  }
+}
+
+/* Adjust font size for very small screens */
+@media (max-width: 480px) {
+  .project .nav.nav-pills .nav-link {
+    font-size: 14px;
+    padding: 12px 0;
+  }
 }
