@@ -16,7 +16,7 @@ export const Projects = () => {
   const projects = [
     {
       title: "Training Management System",
-      description: "Laravel, REST APIs, MySQL, AWS Deployment",
+      description: "Laravel, REST APIs, MySQL, JavaScript, JSON, Ajax, Jquery, AWS Deployment",
       imgUrl: tmsImg,
     },
     {
@@ -30,7 +30,7 @@ export const Projects = () => {
       imgUrl: vmsImg,
     },
     {
-      title: "Visitor Management System",
+      title: "Patrolling Management System",
       description: "Laravel, Livewire, RESTful APIs, Postman, MySQL",
       imgUrl: patrolImg,
     },
