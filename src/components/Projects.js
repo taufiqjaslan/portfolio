@@ -120,8 +120,8 @@ export const Projects = () => {
                           <div className="roadmap-dot"></div>
                           <div className="roadmap-content">
                             <span className="roadmap-date">Mar 2024 - Sept 2024</span>
-                            <h3>Pixel Dynamic Technology (Freelance)</h3>
-                            <h4>Self-Employed - Remote</h4>
+                            <h3>Software Developer (Freelance)</h3>
+                            <h4>Pixel Dynamic Technology - Remote</h4>
                             <ul>
                               <li>Developed a responsive Laravel/Livewire system, improving data organization by 80%.</li>
                               <li>Enhanced UX and reduced manual tasks by 60% via role-based access control.</li>
